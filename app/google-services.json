@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "696170586225",
+    "firebase_url": "https://clicker-46476.firebaseio.com",
+    "project_id": "clicker-46476",
+    "storage_bucket": "clicker-46476.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:696170586225:android:5b1089fe60fa49fe",
+        "android_client_info": {
+          "package_name": "com.maraligat.clicker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "696170586225-bhgc1ur69fjinbdom0dl8u62biaq51r6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.maraligat.clicker",
+            "certificate_hash": "6a86644aa0d260f4d3b8b0dd18b06ea7395e30d0"
+          }
+        },
+        {
+          "client_id": "696170586225-8of0hpslupo6cta0b9o2811r720ohgn2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.maraligat.clicker",
+            "certificate_hash": "39712cf8711d42d75046f645f7559ba808855cf2"
+          }
+        },
+        {
+          "client_id": "696170586225-7hn75bqo8jmkupk65pr5jmmq011v5l1r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuvUey4MLgy1ZtkQ9McoXZyDca3GrbTbc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "696170586225-7hn75bqo8jmkupk65pr5jmmq011v5l1r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
