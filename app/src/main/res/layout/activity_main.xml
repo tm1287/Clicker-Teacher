@@ -7,63 +7,48 @@
     tools:context="com.maraligat.clickerteacher.MainActivity"
     tools:layout_editor_absoluteY="81dp">
 
-    <Button
-        android:id="@+id/agree_b"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Agree"
-        app:layout_constraintBottom_toBottomOf="@+id/disagree_b"
-        app:layout_constraintEnd_toStartOf="@+id/disagree_b"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/disagree_b"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/disagree_b"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
-        android:text="Disagree"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/agree_b"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/agree_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="80dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="4dp"
         android:text="0"
-        app:layout_constraintEnd_toEndOf="@+id/agree_b"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/agree_b" />
 
     <TextView
         android:id="@+id/disagree_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginTop="4dp"
         android:text="0"
-        app:layout_constraintStart_toStartOf="@+id/disagree_b"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/disagree_b" />
 
     <Button
         android:id="@+id/reset_b"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="240dp"
         android:text="Reset"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/disagree_tv"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.624" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_tv"
+        app:layout_constraintVertical_bias="0.062" />
 
     <TextView
         android:id="@+id/question_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:text="Place Question Here"
         android:textAlignment="center"
         android:textSize="24sp"
@@ -75,19 +60,50 @@
         android:id="@+id/question_et"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="61dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="56dp"
         android:ems="10"
         android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/reset_b"
-        tools:layout_editor_absoluteX="16dp" />
+        app:layout_constraintVertical_bias="0.096" />
 
     <Button
         android:id="@+id/update_b"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="61dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:text="UPDATE"
-        app:layout_constraintLeft_toRightOf="@+id/question_et"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/question_et"
         app:layout_constraintTop_toBottomOf="@+id/reset_b" />
+
+    <ImageButton
+        android:id="@+id/agree_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/disagree_b"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_tv"
+        app:srcCompat="@mipmap/thumbup" />
+
+    <ImageButton
+        android:id="@+id/disagree_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/agree_b"
+        app:layout_constraintTop_toBottomOf="@+id/question_tv"
+        app:srcCompat="@mipmap/thumbdown" />
+
 </android.support.constraint.ConstraintLayout>
